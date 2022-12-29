@@ -1,0 +1,59 @@
+---
+title: "Safeguard"
+subtitle: "Safeguarding European wild pollinators"
+format: html
+engine: knitr
+---
+
+```{css text aligment, echo = FALSE}
+.justify {
+  text-align: justify !important
+}
+```
+
+```{r metaweb info, echo = FALSE}
+
+#Metaweb basic info
+load("Data/Metaweb_info.RData")
+info = coord_long_format
+#Extract levels for: Study, network and country
+study_number = nlevels(factor(info$Study_id))
+network_number = nlevels(factor(info$Study_network_id))
+country_number = nlevels(factor(info$Country))
+
+#Generate automatic caption here
+caption_1 = paste("**Figure 1.** Location of the areas covered by the", study_number, "different studies that form the current metaweb")
+
+```
+
+::: justify
+Here, we present a joint effort to build the first **European metaweb of plant-pollinator interactions**. This is a task that forms part of the ongoing European project *Safeguarding European wild pollinators* (Safeguard). At the moment, this metaweb comprises `r study_number` different studies distributed across `r country_number` countries with a total of `r network_number` individual study sites or networks (**Figure 1**). 
+
+The main goal of this metaweb is to be a dynamic project where the addition of studies would help to validate the robustness of our understanding of plant-pollinator interactions at the European level. The metaweb in its current form has obvious biases (e.g., spatial) that we hope to overcome with the addition of new studies. This metaweb is going to consider exclusively insect pollinators and in particular: bees, syrphids, bombylids, butterflies and pollinating beetles. 
+:::
+
+```{r metaweb plot, echo = FALSE, message=FALSE, warning=FALSE, fig.cap= caption_1}
+
+library(sf)
+library(ggplot2)
+
+#Read pertinent data
+data_coord = st_read("Data/data_coord.shp", quiet = TRUE) 
+cntries = st_read("Data/cntries.shp", quiet = TRUE)
+
+ggplot() +
+geom_sf(data = cntries, fill = "grey80", color = "black") +
+xlim(c(2200000, 7150000)) +
+ylim(c(1380000, 5500000)) +
+theme(panel.grid.major = element_line(color = gray(0.5), linetype = "dashed", 
+        size = 0.5), panel.background = element_rect(fill = "aliceblue"),
+panel.border = element_rect(colour = "black", fill=NA, size=1)) +
+geom_sf(data = data_coord, color="orange", size = 2.5, stroke = 0, shape = 16) +
+theme(legend.position="none") + 
+scale_colour_manual(name = "Study \n locations", values = colors)
+
+```
+
+
+
+

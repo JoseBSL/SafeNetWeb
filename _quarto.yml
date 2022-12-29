@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Safeguard"
+  sidebar:
+    background: primary
+    # logo: "images/logo.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/JoseBSL/SafeNetWeb
+        text: GitHub
+      - icon: twitter
+        href: https://twitter.com/Safeguard2021?s=20&t=BHIyNtAf3gqlGFV2qyq-Ig
+    style: floating
+    search: false
+    contents:
+      - href: index.qmd
+        text: Overview
+      - href: introduction.qmd
+        text: How to contribute?
+
+format:
+  html:
+    theme: minty #change it here if you don't like the electric pink https://quarto.org/docs/output-formats/html-themes.html
+    #css: styles.css
+    toc: true
+    
