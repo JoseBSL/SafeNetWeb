@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Safeguard"
+  title: "Safeguard project"
   sidebar:
     background: primary
     # logo: "images/logo.png"
