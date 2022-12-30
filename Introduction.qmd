@@ -1,5 +1,12 @@
 ---
-title: "Safeguard"
-subtitle: "Safeguarding European wild pollinators"
+title: "Safeguarding European wild pollinators"
+subtitle: "European metaweb of plant-pollinator interactions"
+format: html
+engine: knitr
 ---
 
+```{css title size, echo=FALSE}
+.title {
+  font-size: 35px;
+}
+```

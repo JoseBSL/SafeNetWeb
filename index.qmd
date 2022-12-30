@@ -39,7 +39,7 @@ Here, we present a joint effort to build the first **European metaweb of plant-p
 
 ## Objective
 
-The main goal of this metaweb is to be a dynamic project that describes at the European level plant-pollinator interactions. The addition of new studies would help to improve predictions and validate the robustness of our understanding of these interactions at the continent scale. The metaweb focus only on the most relevant and representative entomophilous taxa found across networks: bees, syrphids, bombylids, butterflies and pollinating beetles.
+The main goal of this metaweb is to be a dynamic, open and reproducible project that describes at the European level plant-pollinator interactions. The addition of new studies would help to improve predictions and validate the robustness of our understanding of these interactions at the continent scale. The metaweb focus only on the most relevant and representative entomophilous taxa found across networks: bees, syrphids, bombylids, butterflies and pollinating beetles.
 
 ## Status
 
