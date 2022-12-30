@@ -32,12 +32,23 @@ caption_1 = paste("**Figure 1.** Location of the areas covered by the", study_nu
 
 ```
 
+## Introduction
+
 ::: justify
 Here, we present a joint effort to build the first **European metaweb of plant-pollinator interactions**. This is a task that forms part of the ongoing European project *Safeguarding European wild pollinators* (Safeguard). At the moment, this metaweb comprises `r study_number` different studies distributed across `r country_number` countries with a total of `r network_number` individual study sites or networks (**Figure 1**). 
 
-The main goal of this metaweb is to be a dynamic project where the addition of studies would help to validate the robustness of our understanding of plant-pollinator interactions at the European level. The metaweb in its current form has obvious biases (e.g., spatial) that we hope to overcome with the addition of new studies. This metaweb takes into consideration insect pollinators and the flowering plants they visit. Specifically, the metaweb focus only on the most relevant and representative entomophilous taxa found across networks: bees, syrphids, bombylids, butterflies and pollinating beetles. Currently, we are in the process of reviewing and homogenising pollinator and plant species names.
+## Objective
+
+The main goal of this metaweb is to be a dynamic project that describes at the European level plant-pollinator interactions. The addition of new studies would help to improve predictions and validate the robustness of our understanding of these interactions at the continent scale. The metaweb focus only on the most relevant and representative entomophilous taxa found across networks: bees, syrphids, bombylids, butterflies and pollinating beetles.
+
+## Status
+
+The metaweb in its current form has obvious biases (e.g., spatial) that we hope to overcome with the addition of new studies. Currently, we are in the process of reviewing and homogenising all pollinator and plant species names.
 
 :::
+
+
+
 
 ```{r metaweb plot, echo = FALSE, message=FALSE, warning=FALSE, fig.cap= caption_1}
 
