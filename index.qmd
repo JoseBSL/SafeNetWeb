@@ -5,6 +5,12 @@ format: html
 engine: knitr
 ---
 
+```{css title size, echo=FALSE}
+.title {
+  font-size: 35px;
+}
+```
+
 ```{css text aligment, echo = FALSE}
 .justify {
   text-align: justify !important
@@ -29,7 +35,7 @@ caption_1 = paste("**Figure 1.** Location of the areas covered by the", study_nu
 ::: justify
 Here, we present a joint effort to build the first **European metaweb of plant-pollinator interactions**. This is a task that forms part of the ongoing European project *Safeguarding European wild pollinators* (Safeguard). At the moment, this metaweb comprises `r study_number` different studies distributed across `r country_number` countries with a total of `r network_number` individual study sites or networks (**Figure 1**). 
 
-The main goal of this metaweb is to be a dynamic project where the addition of studies would help to validate the robustness of our understanding of plant-pollinator interactions at the European level. The metaweb in its current form has obvious biases (e.g., spatial) that we hope to overcome with the addition of new studies. This metaweb takes into consideration insect pollinators and the flowering plants they visit. Specifically, the metaweb focus only on the most relevant and representative taxa across networks: bees, syrphids, bombylids, butterflies and pollinating beetles.
+The main goal of this metaweb is to be a dynamic project where the addition of studies would help to validate the robustness of our understanding of plant-pollinator interactions at the European level. The metaweb in its current form has obvious biases (e.g., spatial) that we hope to overcome with the addition of new studies. This metaweb takes into consideration insect pollinators and the flowering plants they visit. Specifically, the metaweb focus only on the most relevant and representative entomophilous taxa found across networks: bees, syrphids, bombylids, butterflies and pollinating beetles. Currently, we are in the process of reviewing and homogenising pollinator and plant species names.
 
 :::
 

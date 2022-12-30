@@ -3,10 +3,10 @@ project:
   output-dir: docs
 
 website:
-  title: "Safeguard project"
+  title: "Safeguard"
   sidebar:
     background: primary
-    # logo: "images/logo.png"
+    logo: "images/logo.png"
     pinned: true
     align: center
     tools:
