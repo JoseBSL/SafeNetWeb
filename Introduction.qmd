@@ -10,3 +10,16 @@ engine: knitr
   font-size: 35px;
 }
 ```
+
+```{css text aligment, echo = FALSE}
+.justify {
+  text-align: justify !important
+}
+```
+
+
+
+
+
+
+
