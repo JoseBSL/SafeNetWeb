@@ -20,8 +20,8 @@ website:
     contents:
       - href: index.qmd
         text: Overview
-      - href: introduction.qmd
-        text: How to contribute?
+      - href: metadata.qmd
+        text: Metadata
 
 format:
   html:

@@ -1,0 +1,62 @@
+---
+title: "Safeguarding European wild pollinators"
+subtitle: "European metaweb of plant-pollinator interactions"
+format: html
+engine: knitr
+---
+
+```{css title size, echo=FALSE}
+.title {
+  font-size: 35px;
+}
+```
+
+```{css text aligment, echo = FALSE}
+.justify {
+  text-align: justify !important
+}
+```
+
+
+::: justify
+Here, we show the [metadata](#metadata) for the each of the studies compiled in the Safeguard project. In addition, the authors of each of these studies with their individual contact information is provided below [(see Authorship section)](#authorship). In both sections, the different studies are indicated by the ```Study_id``` column.
+
+:::
+
+
+
+## Metadata
+
+```{r warning = FALSE, message = FALSE, echo = FALSE, fig.width = 10}
+
+library(readr)
+library(kableExtra)
+library(dplyr)
+
+d = read_csv("Data/Metadata.csv") %>% 
+filter(!Metadata_fields == "Sampling_area_details",
+       !Metadata_fields == "Sampling_area_species_m2",
+       !Metadata_fields == "Sampling_area_total_m2",
+       !Metadata_fields == "Sampling_time_species_round_min",
+       !Metadata_fields == "Sampling_time_total_min",
+       !Metadata_fields == "Sampling_time_details")
+
+#Because the table is too long I am going to filter out some rows
+
+kable(d, booktabs = T, linesep = "\\addlinespace") %>%
+kable_styling(full_width = F,font_size = 14) %>% 
+row_spec(0, bold=T)
+
+```
+
+## Authorship
+
+```{r warning = FALSE, message = FALSE, echo = FALSE}
+
+d = read_csv("Data/Authorship.csv") 
+
+kable(d, booktabs = T, linesep = "\\addlinespace") %>%
+kable_styling(full_width = F,font_size = 14) %>% 
+row_spec(0, bold=T)
+
+```
