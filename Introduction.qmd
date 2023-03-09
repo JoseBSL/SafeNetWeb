@@ -18,8 +18,26 @@ engine: knitr
 ```
 
 
+## Metadata
+
+::: justify
+Here, we show individual information for the each of the studies compiled in Safeguard (see Study_id column). The authors with their contact information is provided below (see Authorship section).
+
+:::
 
 
+```{r warning = FALSE, message = FALSE, echo = FALSE, fig.width = 10}
+
+library(readr)
+library(kableExtra)
+
+d = read_csv("Data/Metadata.csv")
+
+kable(d, booktabs = T, linesep = "\\addlinespace", caption = "Table 1") %>%
+kable_styling(full_width = F,font_size = 14) %>% 
+row_spec(0, bold=T)
+
+```
 
 
 
