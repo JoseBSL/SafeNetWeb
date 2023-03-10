@@ -33,6 +33,8 @@ library(readr)
 library(kableExtra)
 library(dplyr)
 
+
+#Because the table is too long I am going to filter out some rows
 d = read_csv("Data/Metadata.csv") %>% 
 filter(!Metadata_fields == "Sampling_area_details",
        !Metadata_fields == "Sampling_area_species_m2",
@@ -41,11 +43,13 @@ filter(!Metadata_fields == "Sampling_area_details",
        !Metadata_fields == "Sampling_time_total_min",
        !Metadata_fields == "Sampling_time_details")
 
-#Because the table is too long I am going to filter out some rows
+
 
 kable(d, booktabs = T, linesep = "\\addlinespace") %>%
 kable_styling(full_width = F,font_size = 14) %>% 
 row_spec(0, bold=T)
+
+
 
 ```
 
